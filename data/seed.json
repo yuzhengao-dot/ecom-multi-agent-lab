@@ -1,0 +1,46 @@
+{
+  "users": [
+    {"user_id": "U1001", "nickname": "林舟", "city": "杭州", "register_days": 620, "tags": ["数码爱好者", "高活跃"]},
+    {"user_id": "U1002", "nickname": "陈静", "city": "成都", "register_days": 95, "tags": ["新客", "母婴"]},
+    {"user_id": "U1003", "nickname": "赵磊", "city": "北京", "register_days": 1180, "tags": ["沉睡用户", "价格敏感"]},
+    {"user_id": "U1004", "nickname": "苏禾", "city": "深圳", "register_days": 340, "tags": ["家居", "高客单"]}
+  ],
+  "products": [
+    {"sku": "SKU-1001", "title": "降噪蓝牙耳机 Pro", "category": "数码", "price": 899.0, "cost": 520.0, "rating": 4.8, "stock": 126, "warehouse": "华东仓", "competitor_price": 929.0, "tags": ["热销", "降噪", "通勤"]},
+    {"sku": "SKU-1002", "title": "便携咖啡机 Mini", "category": "家居", "price": 459.0, "cost": 268.0, "rating": 4.6, "stock": 8, "warehouse": "华南仓", "competitor_price": 439.0, "tags": ["新品", "小家电"]},
+    {"sku": "SKU-1003", "title": "轻量跑鞋 Air 2", "category": "运动", "price": 629.0, "cost": 350.0, "rating": 4.7, "stock": 240, "warehouse": "华东仓", "competitor_price": 659.0, "tags": ["跑步", "透气"]},
+    {"sku": "SKU-1004", "title": "婴儿棉柔巾 12 包装", "category": "母婴", "price": 89.0, "cost": 46.0, "rating": 4.9, "stock": 510, "warehouse": "西南仓", "competitor_price": 95.0, "tags": ["复购高", "囤货"]},
+    {"sku": "SKU-1005", "title": "机械键盘 K87", "category": "数码", "price": 749.0, "cost": 430.0, "rating": 4.5, "stock": 0, "warehouse": "华北仓", "competitor_price": 769.0, "tags": ["客制化", "办公"]},
+    {"sku": "SKU-1006", "title": "香薰加湿器 静音版", "category": "家居", "price": 299.0, "cost": 156.0, "rating": 4.4, "stock": 63, "warehouse": "华东仓", "competitor_price": 289.0, "tags": ["卧室", "静音"]},
+    {"sku": "SKU-1007", "title": "运动速干 T 恤 三件装", "category": "运动", "price": 159.0, "cost": 78.0, "rating": 4.3, "stock": 388, "warehouse": "华南仓", "competitor_price": 169.0, "tags": ["基础款", "高复购"]},
+    {"sku": "SKU-1008", "title": "儿童绘本套装 10 册", "category": "母婴", "price": 198.0, "cost": 92.0, "rating": 4.8, "stock": 145, "warehouse": "西南仓", "competitor_price": 208.0, "tags": ["启蒙", "礼盒"]},
+    {"sku": "SKU-1009", "title": "氮化镓充电器 100W", "category": "数码", "price": 269.0, "cost": 138.0, "rating": 4.7, "stock": 92, "warehouse": "华东仓", "competitor_price": 259.0, "tags": ["快充", "差旅"]},
+    {"sku": "SKU-1010", "title": "记忆棉护颈枕", "category": "家居", "price": 349.0, "cost": 175.0, "rating": 4.5, "stock": 21, "warehouse": "华北仓", "competitor_price": 369.0, "tags": ["睡眠", "改善"]},
+    {"sku": "SKU-1011", "title": "瑜伽垫 加厚防滑", "category": "运动", "price": 129.0, "cost": 61.0, "rating": 4.6, "stock": 302, "warehouse": "华南仓", "competitor_price": 139.0, "tags": ["居家健身"]},
+    {"sku": "SKU-1012", "title": "智能体脂秤 S3", "category": "数码", "price": 219.0, "cost": 112.0, "rating": 4.2, "stock": 4, "warehouse": "华东仓", "competitor_price": 229.0, "tags": ["健康", "数据"]}
+  ],
+  "orders": [
+    {"order_id": "ORD-9001", "user_id": "U1001", "sku": "SKU-1001", "qty": 1, "amount": 899.0, "days_ago": 12},
+    {"order_id": "ORD-9002", "user_id": "U1001", "sku": "SKU-1009", "qty": 1, "amount": 269.0, "days_ago": 40},
+    {"order_id": "ORD-9003", "user_id": "U1001", "sku": "SKU-1003", "qty": 1, "amount": 629.0, "days_ago": 95},
+    {"order_id": "ORD-9004", "user_id": "U1002", "sku": "SKU-1004", "qty": 3, "amount": 267.0, "days_ago": 8},
+    {"order_id": "ORD-9005", "user_id": "U1002", "sku": "SKU-1008", "qty": 1, "amount": 198.0, "days_ago": 21},
+    {"order_id": "ORD-9006", "user_id": "U1003", "sku": "SKU-1007", "qty": 2, "amount": 318.0, "days_ago": 210},
+    {"order_id": "ORD-9007", "user_id": "U1004", "sku": "SKU-1010", "qty": 1, "amount": 349.0, "days_ago": 18},
+    {"order_id": "ORD-9008", "user_id": "U1004", "sku": "SKU-1006", "qty": 2, "amount": 598.0, "days_ago": 55},
+    {"order_id": "ORD-9009", "user_id": "U1004", "sku": "SKU-1002", "qty": 1, "amount": 459.0, "days_ago": 130}
+  ],
+  "browsing": [
+    {"user_id": "U1001", "sku": "SKU-1005", "category": "数码", "days_ago": 2},
+    {"user_id": "U1001", "sku": "SKU-1012", "category": "数码", "days_ago": 3},
+    {"user_id": "U1002", "sku": "SKU-1004", "category": "母婴", "days_ago": 1},
+    {"user_id": "U1003", "sku": "SKU-1011", "category": "运动", "days_ago": 5},
+    {"user_id": "U1004", "sku": "SKU-1006", "category": "家居", "days_ago": 4}
+  ],
+  "coupons": [
+    {"code": "NEW10", "kind": "percent", "value": 0.10, "min_spend": 99.0},
+    {"code": "SAVE30", "kind": "fixed", "value": 30.0, "min_spend": 299.0},
+    {"code": "VIP15", "kind": "percent", "value": 0.15, "min_spend": 499.0},
+    {"code": "WINBACK20", "kind": "percent", "value": 0.20, "min_spend": 199.0}
+  ]
+}

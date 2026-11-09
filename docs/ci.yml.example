@@ -1,0 +1,38 @@
+# GitHub Actions 工作流模板
+# 说明：创建仓库时所用访问令牌缺少 workflow 权限，GitHub 拒绝通过 API 写入 .github/workflows/ 路径。
+# 启用 CI：在 GitHub 网页端把本文件移动/复制到 .github/workflows/ci.yml 即可；
+#          或使用带 repo + workflow 权限的令牌重新推送原路径。
+
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: ["3.11", "3.12", "3.13"]
+    env:
+      PYTHONPATH: src
+      LLM_PROVIDER: mock
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+          cache: pip
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install -r requirements.txt
+      - name: Run unit and API tests
+        run: python -m pytest -q
+      - name: Smoke test CLI (offline mode)
+        run: python cli.py run --user U1001 --scene "CI smoke" --budget 300 --json > /tmp/campaign.json
+      - name: Verify the offline run produced a plan
+        run: python -c "import json; d=json.load(open('/tmp/campaign.json')); assert d['plan']['compliance_status']=='approved'; assert d['plan']['recommended_skus']"
